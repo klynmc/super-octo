@@ -1,1 +1,1 @@
-# super-octo
+# README Generator
