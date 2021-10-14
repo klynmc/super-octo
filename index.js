@@ -81,7 +81,7 @@ inquirer.prompt([
     return writeFile(pageHTML);
   }) */
 
-/*
+
 return `# ${title}
 ${badge}
 ${description}
@@ -95,7 +95,7 @@ ${description}
 ## Usage 
 ## License
 ## Contribution
-## Questions` */
+## Questions` 
 
 // TODO: Create an array of questions for user input
 //const questions = [];
