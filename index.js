@@ -2,6 +2,7 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+// const questions = () => {
 inquirer.prompt([
     {
         type: 'input',
@@ -29,7 +30,7 @@ inquirer.prompt([
     {
         type: 'list',
         name: 'license',
-        message: 'What liscense was used?',
+        message: 'What liscense was used? (Required)',
         choices: ['The MIT License', 'The GPL License', 'The Apache License', 'The GNU License', 'N/A'],
         validate: nameInput => {
             if (nameInput) {
@@ -39,11 +40,65 @@ inquirer.prompt([
               return false;
             }
         }
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'What did you contribute to this project?'
+    },
+    {
+      type: 'input',
+      name: 'username',
+      message: 'Enter your GitHub username: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your GitHub username!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your email address: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your email address!');
+          return false;
+        }
+      }
     }
     
 ]);
+// }
+
+ /* questions()
+  .then(pageHTML => {
+    return writeFile(pageHTML);
+  }) */
+
+/*
+return `# ${title}
+${badge}
+${description}
+## Table of Contents
+- [Installation](installation)
+- [Usage](Usage)
+- [License](License)
+- [Contribution](Contribution)
+- [Questions](Questions)
+## Installation
+## Usage 
+## License
+## Contribution
+## Questions` */
+
 // TODO: Create an array of questions for user input
-const questions = [];
+//const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
