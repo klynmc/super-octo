@@ -1,7 +1,7 @@
 
-  # readme
+  # README-Generator
   ## Description
-  readme generator
+  A JavaScript based application which generates a professional README file based off user input
   ## Table of Contents
   - [Installation](Installation)
   - [License](License)
@@ -9,7 +9,7 @@
   - [Contribution](Contribution)
   - [Questions](Questions)
   ## Installation
-  How to install the application: terminal and node
+  How to install the application: Through terminal and with node.js
   ## Usage 
   N/A
   ## License
