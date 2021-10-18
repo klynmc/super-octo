@@ -10,17 +10,21 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
-  - [Installation](installation)
+  - [Installation](Installation)
+  - [License](License)
   - [Usage](Usage)
   - [Contribution](Contribution)
   - [Questions](Questions)
   ## Installation
   How to install the application: ${data.installation}
   ## Usage 
+  ${data.usage}
   ## License
+  ${data.license}
   ## Contribution
+  ${data.contribution}
   ## Questions 
-  For any additional questions, contact ${data.email} or ${data.username}.`;
+  For any additional questions, contact ${data.email} or ${data.username} on GitHub.`;
 }
 
 module.exports = generateMarkdown;

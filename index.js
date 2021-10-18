@@ -28,8 +28,8 @@ const questions = [
         name: 'installation',
         message: 'How does a user download your app?'
     },
-    //{
-        /* type: 'list',
+    {
+        type: 'list',
         name: 'license',
         message: 'What liscense was used? (Required)',
         choices: ['The MIT License', 'The GPL License', 'The Apache License', 'The GNU License', 'N/A'],
@@ -40,12 +40,12 @@ const questions = [
               console.log('Please enter the license that was used.');
               return false;
             }
-        } */
-    //},
+        }
+    },
     {
       type: 'input',
       name: 'contribution',
-      message: 'What did you contribute to this project?'
+      message: 'What did you contribute to this project? Ex: Made by so-and-so'
     },
     {
       type: 'input',
@@ -72,6 +72,11 @@ const questions = [
           return false;
         }
       }
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Enter your usage here:'
     }
     
 ];
@@ -92,7 +97,7 @@ function writeToFile(fileName, data) {
     if (err) {
       return console.log(err)
     } else {
-      console.log('Your README file has been created!')
+      console.log('Your README.md file has been created!')
     }
 
   });
@@ -102,7 +107,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions)
     .then(function(data) {
-      writeToFile("README", generateMarkdown(data));
+      writeToFile("README.md", generateMarkdown(data));
       console.log(data)
     })
 }
