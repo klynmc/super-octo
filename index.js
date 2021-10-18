@@ -114,3 +114,6 @@ function init() {
 
 // Function call to initialize app
 init();
+
+// REFERRENCES 
+// https://youtu.be/cqJQ9wbUQto

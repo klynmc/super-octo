@@ -28,3 +28,6 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+// REFERRENCES 
+// https://youtu.be/cqJQ9wbUQto
