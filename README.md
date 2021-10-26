@@ -9,7 +9,7 @@
   - [Contribution](Contribution)
   - [Questions](Questions)
   ## Installation
-  How to install the application: Copy SSH key for this repo, clone that to your computer via terminal, then also in terminal, run "node index.js"
+  How to install the application: Copy SSH key for this repo, clone that to your computer via terminal, then also in terminal run "node index.js"
   ## Usage 
   N/A
   ## License
