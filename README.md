@@ -10,6 +10,10 @@
   - [Questions](Questions)
   ## Installation
   How to install the application: Copy SSH key for this repo, clone that to your computer via terminal, then also in terminal run "node index.js"
+
+  ### Link to Walk Through Video
+  https://watch.screencastify.com/v/yfY5kRrvsDukPD8THzza
+
   ## Usage 
   N/A
   ## License
