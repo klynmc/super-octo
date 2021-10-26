@@ -1,5 +1,5 @@
 
-  # README-Generator
+  # README-generator
   ## Description
   A JavaScript based application which generates a professional README file based off user input
   ## Table of Contents
@@ -9,7 +9,7 @@
   - [Contribution](Contribution)
   - [Questions](Questions)
   ## Installation
-  How to install the application: Copy the SSH Key for this repo, clone or init that to your computer, open terminal and run "node index.js"
+  How to install the application: Copy SSH key for this repo, clone that to your computer via terminal, then also in terminal, run "node index.js"
   ## Usage 
   N/A
   ## License
